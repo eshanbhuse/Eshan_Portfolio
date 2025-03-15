@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <div class="logo">Eshan Bhuse</div>
+        <div class="logo">Eshan  <span style="color: #d96846;">Bhuse.</span></div>
         <div>
             <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -23,7 +23,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Eshan Bhuse</div>
+        <div class="logo">Eshan <span style="color: #d96846;">Bhuse.</span></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -43,18 +43,13 @@
     </nav>
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Eshan Bhuse Profile Picture">
+            <img src="./assets/profile-pic.png" alt="Eshan Bhuse Profile Picture" >
 
         </div>
         <div class="section_text">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
             <p class="section_text_p1">Hey, I'm</p>
-            <h1 class="title">Eshan Bhuse</h1>
+            <h1 class="title" style="color: #d96846;">Eshan Bhuse</h1>
             <p class="section_text_p2">Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
@@ -247,16 +242,27 @@
         </p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
+            <div class="contact-form">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
                 <p><a href="mailto:eshanbhusework@gmail.com">eshanbhusework@gmail.com</a></p>
 
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon">
                 <p><a href="https://www.linkedin.com/in/eshanbhuse">LinkedIn</a></p>
 
             </div>
+        </div>
+        <div class="contact-right">
+            <form action="" name="submit-to-google-sheet" >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn-color-2">Submit</button>
+            </form>
+            <span id="message"></span>
+        </div>
         </div>
     </section>
     <footer>

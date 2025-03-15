@@ -90,4 +90,10 @@
     .text-container{
         text-align: justify ;
     }
+    .contact-form{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
 }
