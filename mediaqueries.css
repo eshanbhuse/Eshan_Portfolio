@@ -6,6 +6,11 @@
     .about-containers{
         flex-wrap: wrap;
     }
+    .experience-containers{
+        flex-wrap: wrap;
+        align-items: flex-start; /* Align items at the top */
+
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -20,6 +25,11 @@
     }
     #profile, .section-container{
         display: block;
+    }
+    .experience-containers{
+        flex-wrap: wrap;
+        align-items: flex-start; /* Align items at the top */
+
     }
     .arrow{
         display: none;
@@ -55,6 +65,11 @@
     footer nav{
         height: fit-content;
         margin-bottom: 2rem;
+    }
+    .experience-containers{
+        flex-wrap: wrap;
+        align-items: flex-start; /* Align items at the top */
+
     }
     .about-containers, .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
