@@ -28,14 +28,26 @@ function toggleMenu()
   const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 20) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
   }
 });
-
-
+document.addEventListener("DOMContentLoaded", function() {
+  const textElement = document.querySelector('.title');
+  const underline = document.createElement('div');
+  underline.classList.add('underline');
+  
+  // Append the underline element inside the text element
+  textElement.appendChild(underline);
+  
+  // Set the width of the underline to 80% of the text width (adjust as needed)
+  const textWidth = textElement.offsetWidth;
+  const underlineWidth = textWidth * 0.7;  // 80% of the text width
+  underline.style.width = underlineWidth + 'px';
+  underline.style.left = (textWidth - underlineWidth) / 2 + 'px';  // Center the underline
+});
 // var typed = new typed(".text",{
 //   Strings: ["Frontend Developer","Freelancer","Tech Enthusiast"],
 //   typeSpeed:100,
