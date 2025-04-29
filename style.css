@@ -6,18 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
-
 }
 
 body{
         font-family: "Poppins", sans-serif;
         background-color: #1e1e1f;
         /* background-image: url(./assets/abstract-textured-backgound.jpg); */
-        
-
         background-size: cover;
-            
+
+
 }
 
 html{
@@ -48,7 +45,7 @@ nav{
     z-index: 9999;
     transition:  background-color 0.3s ease, backdrop-filter 0.3s ease;backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    animation: slide-top 0.6s ease forwards;
+    animation: slide-top 0.6s ease forwards; 
 
 
 }
@@ -238,8 +235,6 @@ section{
 
 }
 
-
-
 .section-container{
     display: flex;
 
@@ -405,9 +400,25 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
-    gap: 1rem;
+    margin-left: 1rem;
+    gap: 1.5rem;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: beige;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    height: 20rem; 
+
 }
+
+#socials-container img:hover {
+  transform: scale(1.04); 
+
+}
+
+
 
 .icon{
     cursor: pointer;
@@ -1225,9 +1236,11 @@ footer{
     min-height: 5.625rem;
     background-color: rgb(0, 0, 0);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 footer p{
     text-align: center;
     color: white;
@@ -1315,3 +1328,4 @@ textarea:focus {
     margin-top: 2rem;
     display: block;
 }
+

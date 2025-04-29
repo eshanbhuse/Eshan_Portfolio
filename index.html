@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eshan Bhuse Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="./assets/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-</head>
-<body>
-        <nav id="navbar">
-            <div class="logo">Portfolio</div>
-            <div>
-                <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    
-            </div>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-                Download Resume   
-            </button>
-        </nav>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <button
+        class="btn btn-color-2"
+        onclick="window.open('./assets/resume.pdf')"
+      >
+        Download Resume
+      </button>
+    </nav>
 
     <!-- <nav id="hamburger-nav">
         <div class="logo">Portfolio</div>
@@ -54,509 +60,638 @@
         </div>
     </nav> -->
     <section id="profile">
-        <div class="section_text">
-
-            <p class="section_text_p1">Hey, I'm</p>
-            <h1 class="name-title" style="color: #d96846;">Eshan Bhuse</h1>
-                <p class="section_text_p2">A Passionate <span id="text"> </span></p>
-                <p class="section_text_p3">Passionate Web Developer, problem solver, and tech enthusiast. I love building scalable, user-friendly applications.</p>               
-            <div class="btn-container">
-                
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info   
-                </button>
-            </div>
-            
-
-
+      <div class="section_text">
+        <p class="section_text_p1">Hey, I'm</p>
+        <h1 class="name-title" style="color: #d96846">Eshan Bhuse</h1>
+        <p class="section_text_p2">A Passionate <span id="text"> </span></p>
+        <p class="section_text_p3">
+          Passionate Web Developer, problem solver, and tech enthusiast. I love
+          building scalable, user-friendly applications.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="blob-container">
-            <div class="blob-background">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#d96846" d="M52.8,-63.9C66.5,-54.7,73.2,-33.6,74.3,-14.5C75.5,4.5,70.9,22.6,60.2,36.6C49.5,50.6,32.7,60.6,15.1,65.4C-2.5,70.2,-20.9,69.8,-33.6,60.7C-46.3,51.6,-53.2,33.8,-59.2,15.4C-65.1,-3.1,-70.1,-22.2,-63.6,-35.8C-57.1,-49.4,-39.1,-57.4,-21.3,-63.3C-3.5,-69.3,13.9,-73.1,30.5,-70.6C47.2,-68,62.4,-59.2,52.8,-63.9Z" transform="translate(100 100)" />
-              </svg>
-            </div>
-            <img class="profile-image" src="./assets/profile-pic.png" alt="Profile Picture" />
-          </div>
-
-        <!-- <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Eshan Bhuse Profile Picture" >
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eshanbhuse'">
-                <img src="./assets/instagram.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.github.com/eshanbhuse'">
-                 <img src="./assets/github.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eshanbhuse'">
-                <img src="./assets/leetcode.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.github.com/eshanbhuse'"> 
-            </div>
-
-        </div> -->
-        
-
-    </section>
+      </div>
+      <div class="blob-container">
+        <div class="blob-background">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#d96846"
+              d="M52.8,-63.9C66.5,-54.7,73.2,-33.6,74.3,-14.5C75.5,4.5,70.9,22.6,60.2,36.6C49.5,50.6,32.7,60.6,15.1,65.4C-2.5,70.2,-20.9,69.8,-33.6,60.7C-46.3,51.6,-53.2,33.8,-59.2,15.4C-65.1,-3.1,-70.1,-22.2,-63.6,-35.8C-57.1,-49.4,-39.1,-57.4,-21.3,-63.3C-3.5,-69.3,13.9,-73.1,30.5,-70.6C47.2,-68,62.4,-59.2,52.8,-63.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+        <img
+          class="profile-image"
+          src="./assets/profile-pic.png"
+          alt="Profile Picture"
+        />
+      </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eshanbhuse'">
+            <img src="./assets/instagram.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.github.com/eshanbhuse'">
+             <img src="./assets/github.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eshanbhuse'">
+            <img src="./assets/leetcode.png" alt="Eshan Bhuse LinkedIn Profile" class="icon" onclick="location.href='https://www.github.com/eshanbhuse'"> 
+        </div>
+</section>
     <section id="about">
-        <p class="section_text_p1"></p>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
-
-
-            </div>
-            <div class="about-details-container">
-                <div class="text-container">
-                    <h1 class="title-about">About <span style="color: #d96846;">Me</span> </h1>
-
-                    <p>Hello! I'm Eshan Bhuse, a Full Stack Developer pursuing my B.Tech Degree from Sardar Patel Institute of Technology. I love to build efficient, scalable, and impactful websites. With a strong foundation in DSA, I enjoy solving complex problems and am keen to learn new technologies. <br> <br> I love reading books about personal development and financial literacy. I read Rich Dad and Poor Dad, Atomic Habits, How to Win and Influence People, and many more.</p>
-                </div>
-                <div class="sentence">
-                    <p class="sentence_doing">What I'm Doing</p>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/web-design.png" alt="Education icon" class="icon">
-                        <h2>Web Design</h2>
-                        <p>The most modern and high-quality design made at a professional level.</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/mobile-development.png" alt="Education icon" class="icon">
-                        <h2>Mobile App</h2>
-                        <p>Development of applications for iOS and Android.</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/coding.png" alt="Education icon" class="icon">
-                        <h2>Web Development</h2>
-                        <p>High-quality development of sites at the professional level.</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/camera.png" alt="Education icon" class="icon">
-                        <h2>Photography</h2>
-                        <p>I make high-quality photos of any category at a professional level.</p>
-                    </div>
-                </div>
-                
-
-            </div>
+      <p class="section_text_p1"></p>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
         </div>
-        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"> -->
+        <div class="about-details-container">
+          <div class="text-container">
+            <h1 class="title-about">
+              About <span style="color: #d96846">Me</span>
+            </h1>
+
+            <p>
+              Hello! I'm Eshan Bhuse, a Full Stack Developer pursuing my B.Tech
+              Degree from Sardar Patel Institute of Technology. I love to build
+              efficient, scalable, and impactful websites. With a strong
+              foundation in DSA, I enjoy solving complex problems and am keen to
+              learn new technologies. <br />
+              <br />
+              I love reading books about personal development and financial
+              literacy. I read Rich Dad and Poor Dad, Atomic Habits, How to Win
+              and Influence People, and many more.
+            </p>
+          </div>
+          <div class="sentence">
+            <p class="sentence_doing">What I'm Doing</p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/web-design.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Web Design</h2>
+              <p>
+                The most modern and high-quality design made at a professional
+                level.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/mobile-development.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Mobile App</h2>
+              <p>Development of applications for iOS and Android.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/coding.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Web Development</h2>
+              <p>
+                High-quality development of sites at the professional level.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/camera.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Photography</h2>
+              <p>
+                I make high-quality photos of any category at a professional
+                level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"> -->
     </section>
 
     <section id="journey">
-        <h1 class="title-about">My <span style="color: #d96846;">Journey</span> </h1>
-    
-        <div class="timeline">
-          <div class="timeline-box left">
-            <div class="journey-dot">
-                <span class="dott"></span>
-            </div>
-            <div class="journey-card">
-              <h3>💼 QA and Testing Intern – SBIG</h3>
-              <p class="date">Jun 2025 – Present</p>
-              <ul>
-                <li>Perform manual and automated testing to identify bugs and ensure product quality.       
-                    </li>
-                <li>Collaborate with developers to understand features and report issues.</li>
-                <li>Document test cases and results clearly and concisely.</li>
-              </ul>
-            </div>
-            
-        </div>
-    
-          <div class="timeline-box right">
-            <div class="journey-dot">
-                <span class="dott"></span>
-            </div>
-            <div class="journey-card">
-              <h3>💼 Summer Intern – MERN Stack Project</h3>
-              <p class="date">Jan – June 2025</p>
-              <ul>
-                <li>Developed a scalable MERN web app (20% faster).</li>
-                <li>Worked in a 5-member Agile team.</li>
-                <li>Applied system design for robust architecture.</li>
-              </ul>
-            </div>
+      <h1 class="title-about">
+        My <span style="color: #d96846">Journey</span>
+      </h1>
+
+      <div class="timeline">
+        <div class="timeline-box left">
+          <div class="journey-dot">
+            <span class="dott"></span>
           </div>
-    
-          <div class="timeline-box left">
-            <div class="journey-dot">
-                <span class="dott"></span>
-            </div>
-            <div class="journey-card">
-              <h3>🎓 B. Tech in Computer Engineering</h3>
-              <p class="date">2021 – Present</p>
-              <ul>
-                <li>Sardar Patel Institute of Technology</li>
-                <li>CGPA: 7.2</li>
-              </ul>
-            </div>
+          <div class="journey-card">
+            <h3>💼 QA and Testing Intern – SBIG</h3>
+            <p class="date">Jun 2025 – Present</p>
+            <ul>
+              <li>
+                Perform manual and automated testing to identify bugs and ensure
+                product quality.
+              </li>
+              <li>
+                Collaborate with developers to understand features and report
+                issues.
+              </li>
+              <li>Document test cases and results clearly and concisely.</li>
+            </ul>
           </div>
         </div>
-      </section>
 
+        <div class="timeline-box right">
+          <div class="journey-dot">
+            <span class="dott"></span>
+          </div>
+          <div class="journey-card">
+            <h3>💼 Summer Intern – MERN Stack Project</h3>
+            <p class="date">Jan – June 2025</p>
+            <ul>
+              <li>Developed a scalable MERN web app (20% faster).</li>
+              <li>Worked in a 5-member Agile team.</li>
+              <li>Applied system design for robust architecture.</li>
+            </ul>
+          </div>
+        </div>
 
-    <section id="skills">   
-        <h1 class="title-skills">Skills</h1>
- 
-        <div class="row">
-            
-            <!--   *******  Left Section Starts here  *******   -->
-    
-            <section class="col">
-                
-                <div class="sub-title">
-                    <h1>Technical Skills</h1>
-                </div>
-    
-                <div class="skills-container">
-                    
-                    <div class="skill">
-                        <div class="subject">React</div>
-                        <div class="progress-bar" value="94%">
-                            <div class="progress-line" style="max-width: 94%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">Express</div>
-                        <div class="progress-bar" value="83%">
-                            <div class="progress-line" style="max-width: 83%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">JavaScript</div>
-                        <div class="progress-bar" value="88%">
-                            <div class="progress-line" style="max-width: 88%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">Mongo DB</div>
-                        <div class="progress-bar" value="68%">
-                            <div class="progress-line" style="max-width: 68%"></div>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-        
-            <section class="col">
-                
-                <div class="sub-title">
-                    <h1>Professional Skills</h1>
-                </div>
-    
-                <div class="skills-container">
-                    
-                    <div class="skill">
-                        <div class="subject">Teamwork</div>
-                        <div class="progress-bar" value="82%">
-                            <div class="progress-line" style="max-width: 82%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">Creativity</div>
-                        <div class="progress-bar" value="74%">
-                            <div class="progress-line" style="max-width: 74%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">Communication</div>
-                        <div class="progress-bar" value="63%">
-                            <div class="progress-line" style="max-width: 63%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">Team Management</div>
-                        <div class="progress-bar" value="91%">
-                            <div class="progress-line" style="max-width: 91%"></div>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-            </div>
-    
+        <div class="timeline-box left">
+          <div class="journey-dot">
+            <span class="dott"></span>
+          </div>
+          <div class="journey-card">
+            <h3>🎓 B. Tech in Computer Engineering</h3>
+            <p class="date">2021 – Present</p>
+            <ul>
+              <li>Sardar Patel Institute of Technology</li>
+              <li>CGPA: 7.2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    
 
+    <section id="skills">
+      <h1 class="title-skills">Skills</h1>
+
+      <div class="row">
+        <!--   *******  Left Section Starts here  *******   -->
+
+        <section class="col">
+          <div class="sub-title">
+            <h1>Technical Skills</h1>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill">
+              <div class="subject">React</div>
+              <div class="progress-bar" value="94%">
+                <div class="progress-line" style="max-width: 94%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Express</div>
+              <div class="progress-bar" value="83%">
+                <div class="progress-line" style="max-width: 83%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">JavaScript</div>
+              <div class="progress-bar" value="88%">
+                <div class="progress-line" style="max-width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Mongo DB</div>
+              <div class="progress-bar" value="68%">
+                <div class="progress-line" style="max-width: 68%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col">
+          <div class="sub-title">
+            <h1>Professional Skills</h1>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill">
+              <div class="subject">Teamwork</div>
+              <div class="progress-bar" value="82%">
+                <div class="progress-line" style="max-width: 82%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Creativity</div>
+              <div class="progress-bar" value="74%">
+                <div class="progress-line" style="max-width: 74%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Communication</div>
+              <div class="progress-bar" value="63%">
+                <div class="progress-line" style="max-width: 63%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Team Management</div>
+              <div class="progress-bar" value="91%">
+                <div class="progress-line" style="max-width: 91%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
     <section id="projects">
-        <!-- <p class="section_text_p1">Browse My Projects</p> -->
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="experience-containers">
-            <div class="project-container ">
-                <div class="article-container">
-                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img">
-
-                </div>
-                <div class="small-heading">
-                    <span class="experience-sub">MongoDB
-                    </span>
-                    <span class="experience-sub">Express
-                    </span>
-                    <span class="experience-sub">React
-                    </span>
-                    <span class="experience-sub">Node
-                    </span>
-                </div>
-                
-                <h2 class="experience-sub-title project-title">ShopNest - A  E-Commerce Website
-                </h2>
-
-                <div class="btn-container">
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'">Code</button>
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/eshanbhuse/ESBI'">Live Demo</button>
-
-                </div>
-                <div class="overlay">
-                    <div class="over_text">Build an E-Commerce Website using MERN
-                    </div>
-                    <div class="btn-container-project">
-                        <button class="btn-project1" onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'">Code</button>
-                       <button class="btn-project2 " onclick="location.href='https://github.com/eshanbhuse/ESBI'">Live Demo</button>
-
-                    </div>
-                    
-                  </div>
+      <!-- <p class="section_text_p1">Browse My Projects</p> -->
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="experience-containers">
+          <div class="project-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <div class="project-container ">
-                <div class="article-container">
-                    <img src="./assets/project-2.jpg" alt="Project 1" class="project-img">
-
-                </div>
-                <div class="small-heading">
-                    <span class="experience-sub">JWT 
-                    </span>
-                    <span class="experience-sub">React
-                    </span>
-                    <span class="experience-sub">Node
-                    </span>
-                    <span class="experience-sub">Nodemailer 
-                    </span>
-                    <span class="experience-sub">WebSockets  
-                    </span>
-                </div>
-                
-                <h2 class="experience-sub-title project-title">SPITDesk - A HelpDesk Application
-                </h2>
-
-                <div class="btn-container">
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'">Code</button>
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/eshanbhuse/ESBI'">Live Demo</button>
-
-                </div>
-                <div class="overlay">
-                    <div class="over_text">Developed a HelpDesk for my college
-
-                    </div>
-                    <div class="btn-container-project">
-                        <button class="btn-project1" onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'">Code</button>
-                       <button class="btn-project2 " onclick="location.href='https://github.com/eshanbhuse/ESBI'">Live Demo</button>
-
-                    </div>
-                  </div>
+            <div class="small-heading">
+              <span class="experience-sub">MongoDB </span>
+              <span class="experience-sub">Express </span>
+              <span class="experience-sub">React </span>
+              <span class="experience-sub">Node </span>
             </div>
-            <div class="project-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.jpg" alt="Project 2" class="project-img">
 
-                </div>
-                <div class="small-heading">
-                    <span class="experience-sub">Generative AI
-                    </span>
-                    <span class="experience-sub">Python
-                    </span>
-                    <span class="experience-sub">Django
-                    </span>
-                    <span class="experience-sub">Streamlit
-                    </span>
-                </div>
-                <h2 class="experience-sub-title project-title">Text Based Music Generation</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/'">Code</button>
-                    <button class="btn btn-color-2 " onclick="location.href='https://github.com/'">Live Demo</button>
+            <h2 class="experience-sub-title project-title">
+              ShopNest - A E-Commerce Website
+            </h2>
 
-                </div>
-                <div class="overlay">
-                    <div class="over_text">Build a music generation application using AI techniques
-                    </div>
-                    <div class="btn-container-project">
-                        <button class="btn-project1" onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'">Code</button>
-                       <button class="btn-project2 " onclick="location.href='https://github.com/eshanbhuse/ESBI'">Live Demo</button>
-
-                    </div>
-                  </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'"
+              >
+                Code
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/eshanbhuse/ESBI'"
+              >
+                Live Demo
+              </button>
             </div>
-            
+            <div class="overlay">
+              <div class="over_text">
+                Build an E-Commerce Website using MERN
+              </div>
+              <div class="btn-container-project">
+                <button
+                  class="btn-project1"
+                  onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'"
+                >
+                  Code
+                </button>
+                <button
+                  class="btn-project2"
+                  onclick="location.href='https://github.com/eshanbhuse/ESBI'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="small-heading">
+              <span class="experience-sub">JWT </span>
+              <span class="experience-sub">React </span>
+              <span class="experience-sub">Node </span>
+              <span class="experience-sub">Nodemailer </span>
+              <span class="experience-sub">WebSockets </span>
+            </div>
+
+            <h2 class="experience-sub-title project-title">
+              SPITDesk - A HelpDesk Application
+            </h2>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'"
+              >
+                Code
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/eshanbhuse/ESBI'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <div class="overlay">
+              <div class="over_text">Developed a HelpDesk for my college</div>
+              <div class="btn-container-project">
+                <button
+                  class="btn-project1"
+                  onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'"
+                >
+                  Code
+                </button>
+                <button
+                  class="btn-project2"
+                  onclick="location.href='https://github.com/eshanbhuse/ESBI'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="small-heading">
+              <span class="experience-sub">Generative AI </span>
+              <span class="experience-sub">Python </span>
+              <span class="experience-sub">Django </span>
+              <span class="experience-sub">Streamlit </span>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Text Based Music Generation
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Code
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <div class="overlay">
+              <div class="over_text">
+                Build a music generation application using AI techniques
+              </div>
+              <div class="btn-container-project">
+                <button
+                  class="btn-project1"
+                  onclick="location.href='https://github.com/eshanbhuse/Chat-Analyser'"
+                >
+                  Code
+                </button>
+                <button
+                  class="btn-project2"
+                  onclick="location.href='https://github.com/eshanbhuse/ESBI'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./project'"> -->
+      </div>
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./project'"> -->
     </section>
 
-    
     <section id="certificates">
-        <h1 class="title">Certificates</h1>
-        <div class="carousel">
-          <button class="nav left prev" onclick="plusSlides(-1)">&#8249;</button>
-          
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/aws.png" alt="Certificate" />
-            </div>
-                
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">Ultimate AWS
-                    Certified Cloud Practitioner
-                    CLF-C02 2025</h1>
-                <p id="cert-org">Udemy</p>
-                <p id="cert-date">March 2025</p>
-            </div>
-            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c848820b-87df-4247-9450-5634abd42988.pdf"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+      <h1 class="title">Certificates</h1>
+      <div class="carousel">
+        <button class="nav left prev" onclick="plusSlides(-1)">&#8249;</button>
 
-            
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img id="cert-image" src="./assets/aws.png" alt="Certificate" />
           </div>
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/data science.png" alt="Certificate" />
-            </div>
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">The Data Science Course:
-                    Complete Data Science
-                    Bootcamp 2025</h1>
-                <p id="cert-org">Udemy</p>
-                <p id="cert-date">April 2025</p>
-            </div>
-            
-            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4e7a93fc-26ef-48c9-b6a3-e5cb837c98d8.pdf"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              Ultimate AWS Certified Cloud Practitioner CLF-C02 2025
+            </h1>
+            <p id="cert-org">Udemy</p>
+            <p id="cert-date">March 2025</p>
           </div>
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/Developing Soft Skills and Personality.jpg" alt="Certificate" />
-            </div>
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">IIT Kanpur - Developing Soft Skills and Personality</h1>
-                <p id="cert-org">NPTEL</p>
-                <p id="cert-date">November 2024</p>
-            </div>
-            
-            <a href="https://drive.google.com/file/d/1hr-y5vdO8ToErVSiEi7Ahs20v_YH7PvQ/view"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+          <a
+            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c848820b-87df-4247-9450-5634abd42988.pdf"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img
+              id="cert-image"
+              src="./assets/data science.png"
+              alt="Certificate"
+            />
           </div>
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/google-cloud-computing-foundations-certificate.png" alt="Certificate" />
-            </div>
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">Google Cloud Computing Foundations Certificate</h1>
-                <p id="cert-org">Google Cloud</p>
-                <p id="cert-date">April 2025</p>
-            </div>
-            
-            <a href="https://www.credly.com/badges/be6e8268-e6df-4215-bac2-19490102fdd6/linked_in_profile"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              The Data Science Course: Complete Data Science Bootcamp 2025
+            </h1>
+            <p id="cert-org">Udemy</p>
+            <p id="cert-date">April 2025</p>
           </div>
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/google-cloud-cybersecurity-certificate.png" alt="Certificate" />
-            </div>
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">GCSB - Google Cloud Cybersecurity Certificate
-                </h1>
-                <p id="cert-org">Google Cloud</p>
-                <p id="cert-date">February 2025</p>
-            </div>
-            
-            <a href="https://www.credly.com/badges/55e24b86-9990-4c44-a1a5-54624aa8efb1/linked_in_profile"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+
+          <a
+            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4e7a93fc-26ef-48c9-b6a3-e5cb837c98d8.pdf"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img
+              id="cert-image"
+              src="./assets/Developing Soft Skills and Personality.jpg"
+              alt="Certificate"
+            />
           </div>
-          <div class="certificate-card fade" id="certificate-card">
-            <div class="certificate-image">
-                <img id="cert-image" src="./assets/google-cloud-data-analytics-certificate.png" alt="Certificate" />
-            </div>
-            
-            <div class="certificate-details">
-                <h1 id="cert-title">GCSB - Google Cloud Data Analytics Certificate
-                </h1>
-                <p id="cert-org">Google Cloud</p>
-                <p id="cert-date">April 2025</p>
-            </div>
-            
-            <a href="https://www.credly.com/badges/94dc4596-a961-4f78-90df-c23cd3b1dad9/linked_in_profile"><button class="btn btn3 btn-color-2">View Certificate</button></a>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              IIT Kanpur - Developing Soft Skills and Personality
+            </h1>
+            <p id="cert-org">NPTEL</p>
+            <p id="cert-date">November 2024</p>
           </div>
-    
-          <button class="nav right next" onclick="plusSlides(1)">&#8250;</button>
-                </div>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span>  
-                    <span class="dot" onclick="currentSlide(3)"></span>  
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span>  
-                    <span class="dot" onclick="currentSlide(6)"></span>  
-                  </div>  
-      </section>
+
+          <a
+            href="https://drive.google.com/file/d/1hr-y5vdO8ToErVSiEi7Ahs20v_YH7PvQ/view"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img
+              id="cert-image"
+              src="./assets/google-cloud-computing-foundations-certificate.png"
+              alt="Certificate"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              Google Cloud Computing Foundations Certificate
+            </h1>
+            <p id="cert-org">Google Cloud</p>
+            <p id="cert-date">April 2025</p>
+          </div>
+
+          <a
+            href="https://www.credly.com/badges/be6e8268-e6df-4215-bac2-19490102fdd6/linked_in_profile"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img
+              id="cert-image"
+              src="./assets/google-cloud-cybersecurity-certificate.png"
+              alt="Certificate"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              GCSB - Google Cloud Cybersecurity Certificate
+            </h1>
+            <p id="cert-org">Google Cloud</p>
+            <p id="cert-date">February 2025</p>
+          </div>
+
+          <a
+            href="https://www.credly.com/badges/55e24b86-9990-4c44-a1a5-54624aa8efb1/linked_in_profile"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
+            <img
+              id="cert-image"
+              src="./assets/google-cloud-data-analytics-certificate.png"
+              alt="Certificate"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              GCSB - Google Cloud Data Analytics Certificate
+            </h1>
+            <p id="cert-org">Google Cloud</p>
+            <p id="cert-date">April 2025</p>
+          </div>
+
+          <a
+            href="https://www.credly.com/badges/94dc4596-a961-4f78-90df-c23cd3b1dad9/linked_in_profile"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+
+        <button class="nav right next" onclick="plusSlides(1)">&#8250;</button>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
 
     <section id="contact">
-        <p class="section_text_p4">
-            Get In Touch
-        </p>
-        <h1 class="title">Contact Me!</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-form">
-            <div class="contact-info-container">
-                <!-- <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"> -->
-                <h3>📍 Location</h3>
-                <p>Dadar, Mumbai, Maharashtra, India</p>
+      <p class="section_text_p4">Get In Touch</p>
+      <h1 class="title">Contact Me!</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-form">
+          <div class="contact-info-container">
+            <!-- <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"> -->
+            <h3>📍 Location</h3>
+            <p>Dadar, Mumbai, Maharashtra, India</p>
+          </div>
+          <div class="contact-info-container">
+            <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon"> -->
+            <h3>📞 Phone</h3>
+            <p>+91 8828335090</p>
+          </div>
 
-            </div>
-            <div class="contact-info-container">
-                <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon"> -->
-                <h3>📞 Phone</h3>
-                <p>+91 8828335090</p>
-
-            </div>
-
-            <div class="contact-info-container">
-                <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon"> -->
-                <h3>✉️ Email</h3>
-                 <p>eshanbhusework@gmail.com</p>
-
-            </div>
+          <div class="contact-info-container">
+            <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon"> -->
+            <h3>✉️ Email</h3>
+            <p>eshanbhusework@gmail.com</p>
+          </div>
         </div>
         <div class="contact-right">
-            <form action="" name="submit-to-google-sheet" >
-                <div class="form-row">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                </div>
-                <input type="text" placeholder="Subject" required />
-                <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn-color-2 submit-btn">SUBMIT NOW</button>
-            </form>
-            <span id="message"></span>
+          <form action="" name="submit-to-google-sheet">
+            <div class="form-row">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <input type="text" placeholder="Subject" required />
+            <textarea
+              name="Message"
+              rows="7"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-color-2 submit-btn">
+              SUBMIT NOW
+            </button>
+          </form>
+          <span id="message"></span>
         </div>
-        </div>
+      </div>
     </section>
     <footer>
-            <div>
-                <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            </div>
-            <div class="footer-end">
-                <p>Copyright &#169; 2025 Eshan Bhuse. All Rights Reserved.</p>
-
-            </div>
+      <div>
+        <!-- <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> -->
+      </div>
+      <div class="footer-end">
+        <p>Copyright &#169; 2025 Eshan Bhuse. All Rights Reserved.</p>
+      </div>
     </footer>
-
     <script src="script.js"></script>
+  </body>
+</html>
