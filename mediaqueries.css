@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1300px){
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -11,12 +11,16 @@
         align-items: flex-start; 
 
     }
+   
 }
 
 @media screen and (max-width: 1200px){
     #navbar{
         display: none;
     }
+    body {
+        font-size: 16px;
+      }
     #hamburger-nav{
         display: flex;
     }

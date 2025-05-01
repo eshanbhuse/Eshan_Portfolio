@@ -15,10 +15,10 @@ function toggleMenu()
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        message.innerHTML = "You have sent the message successfully"
+        message.innerHTML = "You have sent the message successfully!!"
         setTimeout(function(){
           message.innerHTML = ""
-        }, 1000);
+        }, 2300);
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
@@ -249,3 +249,14 @@ canvas.addEventListener("mousemove", startDrawing);
 window.onload = () => {
   window.requestAnimationFrame(draw);
 };
+
+
+
+// Use a more specific event listener
+document.body.addEventListener('mousemove', function(e) {
+  const cursor = document.querySelector('.circle-cursor');
+  if (cursor) { // Ensure element exists
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  }
+});

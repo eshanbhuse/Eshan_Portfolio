@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   </head>
   <body>
+    <div class="circle-cursor"></div>
 
     <nav id="navbar">
       <div class="logo">Portfolio</div>
@@ -507,6 +508,23 @@
         </div>
         <div class="certificate-card fade" id="certificate-card">
           <div class="certificate-image">
+            <img id="cert-image" src="./assets/web-development.png" alt="Certificate" />
+          </div>
+
+          <div class="certificate-details">
+            <h1 id="cert-title">
+              The Complete Full-Stack Web Development Bootcamp
+            </h1>
+            <p id="cert-org">Udemy</p>
+            <p id="cert-date">May 2025</p>
+          </div>
+          <a
+            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-bf707a0d-ef66-4e7e-959f-19d4cb3a7407.pdf"
+            ><button class="btn btn3 btn-color-2">View Certificate</button></a
+          >
+        </div>
+        <div class="certificate-card fade" id="certificate-card">
+          <div class="certificate-image">
             <img
               id="cert-image"
               src="./assets/data science.png"
@@ -625,6 +643,7 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
       </div>
     </section>
 
@@ -661,7 +680,7 @@
                 required
               />
             </div>
-            <input type="text" placeholder="Subject" required />
+            <input type="text" name="Subject" placeholder="Subject" required />
             <textarea
               name="Message"
               rows="7"
@@ -672,9 +691,9 @@
               SUBMIT NOW
             </button>
           </form>
-          <span id="message"></span>
-        </div>
+        </div> 
       </div>
+      <span id="message"></span>
     </section>
     <footer>
       <div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Cursor</title>
+    <style>
+      body {
+        margin: 0;
+        background: #111;
+        color: white;
+        cursor: none;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: none;
+      }
+
+      .circle-cursor {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: #e27231;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="padding: 2rem">Move your mouse!</h1>
+    <div class="circle-cursor"></div>
+
+    <script>
+      const cursor = document.querySelector(".circle-cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+      });
+    </script>
+  </body>
+</html>

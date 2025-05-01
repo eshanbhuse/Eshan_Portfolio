@@ -12,11 +12,24 @@ body{
         font-family: "Poppins", sans-serif;
         background-color: #1e1e1f;
         /* background-image: url(./assets/abstract-textured-backgound.jpg); */
-        background-size: cover;
+        overflow-x: hidden !important; /* Hide horizontal scrollbar */
 
 
 }
+.circle-cursor {
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #e27231;
+  mix-blend-mode: difference !important;
+  pointer-events: none !important;
+  z-index: 9999999 !important; /* Force highest layer */
+  transform: translate(-50%, -50%);
 
+}
 html{
     scroll-behavior: smooth;
 }
@@ -1300,10 +1313,18 @@ form input, form textarea{
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid rgb(128, 123, 123);
-
+    background: transparent;
 
 
 }
+
+input:-webkit-autofill {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  box-shadow: 0 0 0px 1000px #1a1a1a inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
 input[type=text]:focus {
     border: 2px solid #d96846;
   }
@@ -1327,5 +1348,28 @@ textarea:focus {
     color: green;
     margin-top: 2rem;
     display: block;
+    text-align: center;
+
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background-color: rgb(51, 50, 50);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d96846; 
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f05a2c; 
+}
