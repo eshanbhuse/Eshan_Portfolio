@@ -5,7 +5,20 @@ function toggleMenu()
     menu.classList.toggle("open")
     icon.classList.toggle("open")
 
+
+
 }
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzvdVaS5QjLy7_qzGceoPRLuEIJjbM_Tp6A0inZC5t1BSyVfidSQYQxIbK-y5CCCWPpyA/exec'
   const form = document.forms['submit-to-google-sheet']
 
@@ -208,55 +221,66 @@ let slideIndex = 1;
     });
   });
 
-  const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-const trailLength = 20;
-const trailColor = "217,104,70"; //RGB values for cyan color
-const trail = [];
-function draw() {
-  ctx.fillStyle = "rgba(0,0,0,0.1)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  for (let i = 0; i < trail.length; i++) {
-    const alpha = 1;
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(trail[i].x, trail[i].y, 8, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(${trailColor},${alpha})`;
-    ctx.closePath();
-    ctx.fill();
-    ctx.restore();
-  }
-  window.requestAnimationFrame(draw);
-}
-function addTrailPoint(x, y) {
-  trail.push({ x, y });
-  if (trail.length > 1) {
-    trail.shift();
-  }
-}
-let mouseX = 0,
-  mouseY = 0;
-const startDrawing = (e) => {
-  const newX = e.clientX;
-  const newY = e.clientY;
-  addTrailPoint(newX, newY);
-  mouseX = newX;
-  mouseY = newY;
-};
-canvas.addEventListener("mousemove", startDrawing);
-window.onload = () => {
-  window.requestAnimationFrame(draw);
-};
+// const canvas = document.getElementById("canvas");
+// const ctx = canvas.getContext("2d");
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+// const trailLength = 20;
+// const trailColor = "217,104,70"; //RGB values for cyan color
+// const trail = [];
+// function draw() {
+//   ctx.fillStyle = "rgba(0,0,0,0.1)";
+//   ctx.fillRect(0, 0, canvas.width, canvas.height);
+//   for (let i = 0; i < trail.length; i++) {
+//     const alpha = 1;
+//     ctx.save();
+//     ctx.beginPath();
+//     ctx.arc(trail[i].x, trail[i].y, 8, 0, Math.PI * 2);
+//     ctx.fillStyle = `rgba(${trailColor},${alpha})`;
+//     ctx.closePath();
+//     ctx.fill();
+//     ctx.restore();
+//   }
+//   window.requestAnimationFrame(draw);
+// }
+// function addTrailPoint(x, y) {
+//   trail.push({ x, y });
+//   if (trail.length > 1) {
+//     trail.shift();
+//   }
+// }
+// let mouseX = 0,
+//   mouseY = 0;
+// const startDrawing = (e) => {
+//   const newX = e.clientX;
+//   const newY = e.clientY;
+//   addTrailPoint(newX, newY);
+//   mouseX = newX;
+//   mouseY = newY;
+// };
+// canvas.addEventListener("mousemove", startDrawing);
+// window.onload = () => {
+//   window.requestAnimationFrame(draw);
+// };
 
 
 
-// Use a more specific event listener
-document.body.addEventListener('mousemove', function(e) {
-  const cursor = document.querySelector('.circle-cursor');
-  if (cursor) { // Ensure element exists
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  }
-});
+// // Use a more specific event listener
+// document.body.addEventListener('mousemove', function(e) {
+//   const cursor = document.querySelector('.circle-cursor');
+//   if (cursor) { // Ensure element exists
+//     cursor.style.left = e.clientX + 'px';
+//     cursor.style.top = e.clientY + 'px';
+//   }
+// });
+
+
+const cursor = document.querySelector(".circle-cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+      });
+
+
+
+

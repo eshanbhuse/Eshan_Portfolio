@@ -24,15 +24,28 @@
     #hamburger-nav{
         display: flex;
     }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+    }
     #experience, .experience-details-container{
         margin-top: 2rem;
     }
-    #profile, .section-container{
+    #profile{
+        display: flex;
+        flex-direction:column-reverse ;
+    }
+    .section-container{
         display: block;
+    }
+    #certificates{
+        display: block;
+        margin-top: 60rem;
     }
     .experience-containers{
         flex-wrap: wrap;
         align-items: flex-start; 
+        padding-right: 60px; /* Adjust based on icon width */
 
     }
     .arrow{
@@ -49,9 +62,61 @@
         height:275px;
         margin: 0 auto 2rem;
     }
+    .profile-image{
+        width: 275px;
+        height:275px;
+        margin: 0 auto 2rem;
+    }
     .about-containers{
         margin-top: 0;
+        flex-wrap: wrap;
+        height: fit-content;
+
     }
+    .details-containers{
+        flex-wrap: wrap;
+    }
+
+    .section_text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .blob-container{
+        width: 40rem;
+        height:30rem;
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .blob-background{
+        width: 40rem;
+        height:45rem;
+
+    }
+    #skills{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .row{
+        display: block;
+        padding-right: 60px; /* Adjust based on icon width */
+
+    }
+    #projects{
+        display: block;
+        margin-top: 10rem;
+    }
+
 }
 
 @media screen and (max-width: 600px)
@@ -66,6 +131,10 @@
     article{
         font-size: 1rem;
     }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+    }
     footer nav{
         height: fit-content;
         margin-bottom: 2rem;
@@ -75,7 +144,19 @@
         align-items: flex-start;
 
     }
-    .about-containers, .contact-info-upper-container, .btn-container{
+    .about-containers{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .details-containers{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
     }
     .contact-info-container{
@@ -115,4 +196,23 @@
     .contact-right{
         flex-basis: 100%;
     }
+    .row{
+        display: block;
+        padding-right: 60px; /* Adjust based on icon width */
+
+    }
+    .blob-container{
+        width: 20rem;
+        height:30rem;
+        margin-top: -5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blob-background{
+        width: 32rem;
+        height:35rem;
+    }
+    
 }
