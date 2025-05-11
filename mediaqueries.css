@@ -40,14 +40,14 @@
     }
     #certificates{
         display: block;
-        margin-top: 60rem;
+        margin-top: 125rem;
+        margin-right: 3rem;
     }
-    .experience-containers{
+    /* .experience-containers{
         flex-wrap: wrap;
         align-items: flex-start; 
         padding-right: 60px; /* Adjust based on icon width */
-
-    }
+    /* }  */
     .arrow{
         display: none;
     }
@@ -113,12 +113,14 @@
 
     }
     #projects{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 10rem;
+        align-items: center;
+        justify-content: center;
     }
 
 }
-
 @media screen and (max-width: 600px)
 {
     #contact, footer{
@@ -127,6 +129,11 @@
     #profile{
         height: 83vh;
         margin-bottom: 0;
+    }
+    #projects{
+        display: block;
+        margin-right: 3.2rem;
+
     }
     article{
         font-size: 1rem;
@@ -139,22 +146,25 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .experience-containers{
-        flex-wrap: wrap;
-        align-items: flex-start;
-
+    .project-containers{
+        flex: 1;
+        align-items: center;
+        justify-content: center;
     }
     .about-containers{
+        width: 44rem;
         display:flex ;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: -9rem;
 
     }
     .details-containers{
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 600px;
+
     }
     .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
@@ -195,6 +205,8 @@
     }
     .contact-right{
         flex-basis: 100%;
+        margin-right: 3rem;
+
     }
     .row{
         display: block;
@@ -213,6 +225,27 @@
     .blob-background{
         width: 32rem;
         height:35rem;
+    }
+    #certificates{
+        display: block;
+        margin-top: 125rem;
+        margin-right: 3rem;
+    }
+    #about{
+        margin-right: 5rem;
+        text-align: center;
+    }
+    #journey{
+        margin-right: 5rem;
+        margin-top: -2rem;
+
+    }
+    .section_text_p4{
+        display: none;
+    }
+    footer{
+        height: fit-content;
+        margin-bottom: -3rem;
     }
     
 }
