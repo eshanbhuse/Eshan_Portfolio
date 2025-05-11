@@ -248,6 +248,7 @@ a:hover::after{
   margin: auto;
   color: white;
   border-radius: 10px;
+
 }
 
 .topnav {
@@ -268,6 +269,8 @@ a:hover::after{
   text-decoration: none;
   font-size: 1.1rem;
   transition: all 1 ease-in-out;
+
+  
 }
 
 .topnav a.icon-mobile {
@@ -549,10 +552,11 @@ section{
     margin-top: 1rem;
     display: flex;
     max-width: 62.5rem;
-    margin: 3.75rem auto;
+    margin: 3.75rem ;
     padding: 0.3rem;
     height: 21.875rem;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -604,7 +608,7 @@ section{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* box-shadow: 0px 1px 1px 1px #111111; */
     cursor: none;
-    width: 45%;
+    width: 298px;
     flex-wrap: wrap;
 
 }
@@ -812,7 +816,7 @@ section{
   .timeline-box.left {
     left: 0;
     text-align: left;
-    left: -10%;
+    left: -1%;
     display: flex;    
     align-items: center;
     gap: 1rem;
@@ -820,7 +824,7 @@ section{
  }
   
   .timeline-box.right {
-    left: 65%;
+    left: 51%;
     text-align: left;
     display: flex;    
     align-items: center;
@@ -898,7 +902,7 @@ section{
   #certificates{
     padding: 40px 20px;
     height: 80vh;
-    margin-top: 40rem;
+    margin-top: 50rem;
   }
   .carousel {
     position: relative;
