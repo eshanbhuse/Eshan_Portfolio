@@ -281,6 +281,3 @@ const cursor = document.querySelector(".circle-cursor");
         cursor.style.left = `${e.clientX}px`;
       });
 
-
-
-
