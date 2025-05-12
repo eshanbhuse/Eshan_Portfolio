@@ -151,7 +151,7 @@
     #projects{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 20rem;
+        margin-top: 23rem;
         align-items: center;
         justify-content: center;
     }
@@ -172,6 +172,14 @@
         display: flex;
         align-items: center;
         justify-items: center;
+    }
+    .contact-form{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 100%;
+        margin-right: 3rem;
+
     }
     
 
